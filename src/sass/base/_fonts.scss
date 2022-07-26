@@ -1,0 +1,35 @@
+@font-face {
+   font-family: 'Poppins';
+   src: url('../../font/Poppins/Poppins-Medium.woff2') format('woff2'),
+      url('../../font/Poppins/Poppins-Medium.woff') format('woff'),
+      url('../../font/Poppins/Poppins-Medium.ttf');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Poppins';
+   src: url('../../font/Poppins/Poppins-Regular.woff2') format('woff2'),
+      url('../../font/Poppins/Poppins-Regular.woff') format('woff'),
+      url('../../font/Poppins/Poppins-Regular.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Poppins';
+   src: url('../../font/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+      url('../../font/Poppins/Poppins-SemiBold.woff') format('woff'),
+      url('../../font/Poppins/Poppins-SemiBold.ttf');
+   font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'CalSans';
+   src: url('../../font/cal-sans/CalSans-SemiBold.ttf'),
+      url('../../font/cal-sans/CalSans-SemiBold.woff'),
+      url('../../font/cal-sans/CalSans-SemiBold.woff2');
+   font-weight: 600;
+   font-style: normal;
+}
