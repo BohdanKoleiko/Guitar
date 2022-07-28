@@ -1,5 +1,6 @@
 @import './base/fonts';
 @import './base/variables';
+@import './base/mixins';
 
 *, *::before, *::after {
    padding: 0;
@@ -12,13 +13,15 @@ li {
    list-style-type: none;
 }
 
-head, body {
-   height: 100vh;
+html, body {
+   height: 100%;
+   min-width: 320px;
 }
 
-body {
+.wrapper {
    display: flex;
    flex-direction: column;
+   min-height: 100%;
 }
 
 .container {
@@ -27,6 +30,7 @@ body {
    margin: 0 auto;
 }
 
+@import './blocks/title';
 @import './blocks/header';
 @import './blocks/main';
 @import './blocks/footer';

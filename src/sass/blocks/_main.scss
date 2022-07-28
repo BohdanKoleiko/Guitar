@@ -1,3 +1,145 @@
 .main {
    flex: 1 1 auto;
 }
+
+.intro{
+   padding-top: 144px;
+   padding-bottom: 100px;
+   position: relative;
+   &__back-img{
+      position: absolute;
+      right: -10%;
+      top: -93px;
+      max-width: 672px;
+      max-height: 586px;
+      z-index: -1;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+      &::after{
+         content: "";
+         display: block;
+         width: 80px;
+         height: 80px;
+         position: absolute;
+         top: calc((586px - 40px) * 100% / 586px);
+         right: 30%;
+         background: #FFFFFF url('../../img/main-logo.svg') center (center/30%) no-repeat;
+         border-radius: 100%;
+      }
+   }
+   &__descr{
+      max-width: 469px;
+   }
+   &__title{
+      font-size: 56px;
+      line-height: 67px;
+      text-align: left;
+   }
+   &__txt{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 16px;
+   }
+   &__get-app{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 312px;
+      margin-top: 33px;
+   }
+   &__button{
+      padding: 18px 48px;
+      border-radius: 40px;
+      background-color: $main-color;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      &:hover{
+         background-color: #dd3f00;
+      }
+   }
+   &__apps{
+      max-width: 80px;
+      max-height: 32.11px;
+      img{
+         margin-right: 23px;
+         width: 26.12px;
+         &:last-child{
+            margin: 0;
+         }
+      }
+   }
+}
+
+.store{
+   padding-top: 120px;
+   padding-bottom: 90px;
+   &__items{
+      margin-top: 86px;
+   }
+   &__header{
+      display: flex;
+      justify-content: space-between;
+      &:nth-child(n+2){
+         margin-top: 96px;
+      }
+   }
+   &__item{
+      display: flex;
+      gap: 54px;
+   }
+   &__caption{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: #121212;
+   }
+   &__more-products{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #868686;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+      &:hover{
+         color: #121212;
+      }
+   }
+   &__guitars-box{
+      max-width: 364px;
+      max-height: 282px;
+      margin-top: 32px;
+   }
+   &__guitar-img{
+      max-width: 364px;
+      max-height: 190px;
+      img{
+         width: 100%;
+         height: 100%;
+         transition: all 0.3s ease-in-out;
+         &:hover{
+            transform: scale(110%) rotate(-5deg);
+         }
+      }
+   }
+   &__guitar-name{
+      margin-top: 40px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #121212;
+   }
+   &__guitar-price{
+      margin-top: 7px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #666666;
+   }
+}
