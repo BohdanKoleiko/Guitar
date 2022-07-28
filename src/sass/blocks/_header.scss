@@ -26,10 +26,6 @@
          font-family: 'Cal Sans';
          color: #000;
          text-decoration: none;
-         transition: color 0.5s ease-in-out;
-         &:hover{
-            color: $main-color;
-         }
       }
    }
 
@@ -41,10 +37,15 @@
       display: flex;
       justify-content: space-between;
       flex: 1 1 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 0 10px;
+      margin: 0 -10px 0 0;
       a{
          color: rgba(18, 18, 18, 0.4);
          text-decoration: none;
          transition: color 0.3s ease-in-out;
+         padding: 10px 0px;
          &:hover{
             color: rgba(18, 18, 18, 1);
          }
