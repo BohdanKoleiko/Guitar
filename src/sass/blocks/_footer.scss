@@ -1,4 +1,112 @@
+.icon{
+   width: 24px;
+   height: 24px;
+   img{
+      width: 100%;
+      height: 100%;
+   }
+}
+
 .footer{
-   padding: 80px 40px 43px;
-   &__wrap{}
+   padding: 80px 0 43px 0;
+   background: #EEEEEE;
+   &__wrap{
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+   }
+   &__logo-contacts{
+      max-width: 220px;
+      margin-right: calc(255px * 100% / 1120px);
+   }
+   &__logo{
+      max-width: 202px;
+      gap: 20px;
+   }
+   &__img{
+      width: 40px;
+      height: 40px;
+   }
+   &__website-name{
+      font-size: 40px;
+      line-height: 48px;
+      font-family: 'Cal Sans';
+   }
+   &__email{
+      display: flex;
+      gap: 20px;
+      margin-top: 28px;
+      a{
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 160%;
+         color: #666666;
+         text-decoration: none;
+      }
+   }
+   &__location{
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      a{
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 160%;
+         color: #666666;
+         text-decoration: none;
+      }
+   }
+   &__menu{
+      max-width: 324px;
+      display: flex;
+      gap: 126px;
+      margin-right: calc(161px * 100% / 1120px);
+   }
+   &__menu-title{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: #121212;
+      margin-bottom: 20px;
+   }
+   &__menu-item{
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      &:not(:last-child){
+         margin-bottom: 16px;
+      }
+      a{
+         color: rgba(18, 18, 18, 0.6);
+         text-decoration: none;
+      }
+   }
+   &__social-media{
+      max-width: 160px;
+      ul>li{
+         display: inline-block;
+         max-width: 32px;
+         max-height: 33.18px;
+         &:not(:last-child){
+            margin-right: 27px;
+         }
+         a{
+            width: 100%;
+            height: 100%;
+         }
+         img{
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }
+   &__copy{
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: rgba(18, 18, 18, 0.6);
+      margin-top: 80px;
+   }
 }
