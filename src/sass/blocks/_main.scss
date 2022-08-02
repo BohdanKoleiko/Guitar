@@ -194,7 +194,7 @@
 }
 
 .brands{
-   padding: 110px 89px 140px;
+   padding: 110px 0 140px;
    &__title{
       margin-bottom: 75px;
    }
@@ -202,6 +202,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 1021px;
+      margin: 0 auto;
    }
    &__item{
       display: flex;
