@@ -5,11 +5,13 @@
 .intro{
    padding-top: 144px;
    padding-bottom: 100px;
-   position: relative;
+   &__wrap{
+      position: relative;
+   }
    &__back-img{
       position: absolute;
       right: -10%;
-      top: -93px;
+      top: -235px;
       max-width: 672px;
       max-height: 586px;
       z-index: -1;
@@ -23,8 +25,9 @@
          width: 80px;
          height: 80px;
          position: absolute;
-         top: calc((586px - 40px) * 100% / 586px);
-         right: 30%;
+         //top: calc((586px - 40px) * 100% / 586px);
+         bottom: -40px;
+         left: calc(348px * 100% / 672px);
          background: #FFFFFF url('../../img/main-logo.svg') center (center/30%) no-repeat;
          border-radius: 100%;
       }
@@ -231,5 +234,56 @@
          width: 110.47px;
          height: 218px;
       }
+   }
+}
+
+.descr-opportunity{
+   background-color: #121212;
+   padding: 93px 0 94px;
+   &__title{
+      color: #FFFFFF;
+      margin-bottom: 75px;
+   }
+   &__items{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1130px;
+      margin: 0 auto;
+   }
+   &__item{
+      max-width: 230px;
+   }
+   &__img{
+      width: 72px;
+      height: 72px;
+      background: #262626;
+      border-radius: 20px;
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      img{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+   &__item-heading{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+   }
+   &__item-txt{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #666666;
    }
 }
