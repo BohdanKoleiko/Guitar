@@ -1,2 +1,2 @@
 # Guitar
-Website of a store about sale guitares
+Store website is about sale guitares
