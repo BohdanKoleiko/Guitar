@@ -287,3 +287,116 @@
       color: #666666;
    }
 }
+
+.feedback{
+   padding: 240px 0 120px 0;
+   &__wrap{
+      margin: 0 25.84px 0 97px;
+   }
+   &__title{
+      margin-bottom: 109px;
+      span{
+         text-transform: unset;
+      }
+   }
+}
+.customers{
+   &__slider{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__photo-box{
+      position: relative;
+      width: 407px;
+      height: 341px;
+      margin-right: 20px;
+   }
+   &__decor{
+      position: absolute;
+      top: 40px;
+      left: 18px;
+      //width: 284.72px;
+      //height: 257.89px;
+      padding-bottom: calc(257.89px * 100% / 407px);
+      width: calc(284.72px * 100% / 407px);
+      background: $main-color;
+      border-radius: 40px 0px 400px 400px;
+      transform: rotate(-7.72deg);
+   }
+   &__photo{
+      position: absolute;
+      right: 0;
+      //max-width: 326px;
+      width: calc(326px * 100% / 407px);
+      border-radius: 100% 100%;
+      overflow: hidden;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &__txt-box{
+      max-width: 524px;
+      //max-height: 283px;
+   }
+   &__txt{
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 160%;
+      color: #666666;
+      margin-bottom: 56px;
+   }
+   &__sub-txt{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+   &__whoisit{
+      margin-right: 20px;
+   }
+   &__name{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 160%;
+   }
+   &__career{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 29px;
+      letter-spacing: 0.08em;
+      color: #868686;
+      text-transform: uppercase;
+      margin-top: 8px;
+   }
+   &__paginations{
+      width: auto !important;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 8px;
+      margin: 0 14px 12px 0;
+      right: 0;
+      bottom: 0;
+   }
+   &__pagination-bullet{
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      background: #C4C4C4;
+      border-radius: 20px;
+      opacity: 1;
+      cursor: pointer;
+      &_active{
+         background: $main-color;
+         height: 12px;
+         width: 24px;
+         &:not(:last-child){
+            margin-right: 4px;
+         }
+         &:last-child{
+            margin-left: 4px;
+         }
+      }
+   }
+}
