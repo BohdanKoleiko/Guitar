@@ -30,9 +30,5 @@
     "defaults",
     "not IE 11",
     "maintained node versions"
-  ],
-  "preinstall": "npx npm-force-resolutions",
-  "resolutions": {
-    "glob-parent": "^6.0.1"
-  }
+  ]
 }
