@@ -345,7 +345,15 @@
       font-size: 24px;
       line-height: 160%;
       color: #666666;
-      margin-bottom: 56px;
+      //margin-bottom: 56px;
+      p{
+         &:not(:last-child){
+            margin-bottom: 15px;
+         }
+         &:last-child{
+            margin-bottom: 56px;
+         }
+      }
    }
    &__sub-txt{
       display: flex;
