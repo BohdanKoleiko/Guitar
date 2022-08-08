@@ -20,9 +20,9 @@ if (checkClass) {
     },
 
     // If we need autoplay
-    autoplay: {
-      delay: 5000,
-    },
+    //autoplay: {
+    //  delay: 5000,
+    //},
     
     // Responsive brackpoints
     breakpoints: {
