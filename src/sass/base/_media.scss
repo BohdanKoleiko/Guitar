@@ -1,0 +1,41 @@
+
+// Будуть діяти правила для екранів які ширше ніж 320 і не більше 480
+@media screen and (min-width: 320px) {
+  .nav{
+    &__menu{
+      a{
+        cursor: none;
+        &:focus{
+          color: rgba(18, 18, 18, 0.4);
+        }
+      }
+    }
+  }
+}
+
+// Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
+@media screen and (min-width: 481px) {
+}
+
+// Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
+@media screen and (min-width: 769px) {
+  .nav{
+    max-width: 520px;
+    &__menu{
+      a{
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+        &:hover{
+          color: rgba(18, 18, 18, 1);
+        }
+      }
+    }
+  }
+}
+
+// Будуть діяти правила для екранів які ширше ніж 1025
+@media screen and (min-width: 1025px) {
+  .nav{
+    max-width: 563px;
+  }
+}
