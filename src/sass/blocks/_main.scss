@@ -10,24 +10,27 @@
    }
    &__back-img{
       position: absolute;
-      right: -10%;
-      top: -235px;
       max-width: 672px;
+      width: calc(672px * 100% / 1200px);
       max-height: 586px;
+      padding-top: calc(586px * 100% / 1200px);
       z-index: -1;
       img{
+         position: absolute;
+         top: 0;
+         left: 0;
          width: 100%;
          height: 100%;
       }
       &::after{
          content: "";
-         display: block;
-         width: 80px;
-         height: 80px;
+         width: calc(80px * 100% / 672px);
+         padding-top: calc(80px * 100% / 672px);
          position: absolute;
-         //top: calc((586px - 40px) * 100% / 586px);
-         bottom: -40px;
+         bottom: 0;
+         transform: translateY(50%);
          left: calc(348px * 100% / 672px);
+
          background: #FFFFFF url('../../img/main-logo.svg') center (center/30%) no-repeat;
          border-radius: 100%;
       }
@@ -56,11 +59,9 @@
       margin-top: 33px;
    }
    &__button{
-      padding: 18px 48px;
       border-radius: 40px;
       background-color: $main-color;
       font-weight: 600;
-      font-size: 16px;
       line-height: calc(24 / 16);
       //line-height: 24px;
       color: #FFFFFF;

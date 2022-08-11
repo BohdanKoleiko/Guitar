@@ -2,7 +2,12 @@
 // Будуть діяти правила для екранів які ширше ніж 320 і не більше 480
 @media screen and (min-width: 320px) {
   .nav{
+    max-width: 460px;
+    margin: 50px 0 0 0;
     &__menu{
+      li:not(:last-child){
+        margin-right: 15px;
+      }
       a{
         cursor: none;
         &:focus{
@@ -11,16 +16,52 @@
       }
     }
   }
+  .logotype{
+    &__website-name{
+      display: none;
+    }
+  }
+
+  .intro{
+    padding-top: 80px;
+    padding-bottom: 70px;
+    &__back-img{
+      display: none;
+    }
+    &__title{
+      font-size: 42px;
+    }
+    &__txt{
+      font-size: 14px;
+    }
+    &__button{
+      font-size: 14px;
+      padding: 17px 45px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
 @media screen and (min-width: 481px) {
+  .logotype{
+    &__website-name{
+      display: block;
+    }
+  }
+
+  .intro{
+    padding-bottom: 80px;
+    &__button{
+      padding: 18px 48px;
+      font-size: 16px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
 @media screen and (min-width: 769px) {
   .nav{
-    max-width: 520px;
+    //max-width: 460px;
     &__menu{
       a{
         cursor: pointer;
@@ -31,11 +72,26 @@
       }
     }
   }
+
+  .intro{
+    &__back-img{
+      display: block;
+      right: -15%;
+      top: -280px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 1025
 @media screen and (min-width: 1025px) {
   .nav{
     max-width: 563px;
+  }
+
+  .intro{
+    &__back-img{
+      right: -10%;
+      top: -235px;
+    }
   }
 }

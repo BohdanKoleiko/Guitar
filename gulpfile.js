@@ -8,9 +8,10 @@ const cleanCSS     = require('gulp-clean-css');
 // Static server
 gulp.task('server', function() {
     browserSync.init({
-        server: {
-            baseDir: "./src"
-        }
+      open: false,
+      server: {
+          baseDir: "./src",
+      }
     });
 });
 
