@@ -51,6 +51,12 @@
 
   .intro{
     padding-bottom: 80px;
+    &__title{
+      font-size: 50px;
+    }
+    &__txt{
+      font-size: 16px;
+    }
     &__button{
       padding: 18px 48px;
       font-size: 16px;
@@ -61,7 +67,6 @@
 // Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
 @media screen and (min-width: 769px) {
   .nav{
-    //max-width: 460px;
     &__menu{
       a{
         cursor: pointer;
@@ -74,6 +79,8 @@
   }
 
   .intro{
+    padding-top: 120px;
+    padding-bottom: 100px;
     &__back-img{
       display: block;
       right: -15%;
@@ -89,6 +96,7 @@
   }
 
   .intro{
+    padding-top: 144px;
     &__back-img{
       right: -10%;
       top: -235px;
