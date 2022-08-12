@@ -9,7 +9,6 @@
         margin-right: 15px;
       }
       a{
-        cursor: none;
         &:focus{
           color: rgba(18, 18, 18, 0.4);
         }
@@ -39,6 +38,25 @@
       padding: 17px 45px;
     }
   }
+
+  .store{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    &__title{
+      font-size: 40px;
+    }
+    &__items{
+      margin-top: 50px;
+    }
+    &__caption, &__more-products{
+      font-size: 16px;
+    }
+    &__item{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.875rem;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
@@ -62,6 +80,16 @@
       font-size: 16px;
     }
   }
+
+  .store{
+    &__item{
+      justify-content: flex-start;
+    }
+    &__guitars-box{
+      max-width: 354px;
+      flex: 0 1 calc((100% / 2) - (1.875rem / 2));
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
@@ -69,7 +97,6 @@
   .nav{
     &__menu{
       a{
-        cursor: pointer;
         transition: color 0.3s ease-in-out;
         &:hover{
           color: rgba(18, 18, 18, 1);
@@ -85,6 +112,29 @@
       display: block;
       right: -15%;
       top: -280px;
+    }
+  }
+
+  .store{
+    &__more-products{
+      &:hover{
+        color: #121212;
+      }
+    }
+    &__item{
+      gap: 54px;
+    }
+    &__guitars-box{
+      max-width: 364px;
+      flex: 0 1 calc((100% / 3) - (3.375rem / 1.5));
+    }
+    &__guitar-img{
+      img{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+           transform: scale(110%) rotate(-5deg);
+        }
+     }
     }
   }
 }
