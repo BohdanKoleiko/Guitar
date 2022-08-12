@@ -82,6 +82,9 @@
   }
 
   .store{
+    &__title{
+      font-size: 42px;
+    }
     &__item{
       justify-content: flex-start;
     }
@@ -116,6 +119,9 @@
   }
 
   .store{
+    &__title{
+      font-size: 44px;
+    }
     &__more-products{
       &:hover{
         color: #121212;
