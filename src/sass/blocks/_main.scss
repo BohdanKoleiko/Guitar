@@ -143,24 +143,18 @@
 }
 
 .categories{
-   padding: 90px 0 110px 0;
-   &__title{
-      margin-bottom: 80px;
-   }
    &__cards{
       max-width: 1088px;
-      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      gap: 69px;
    }
    &__card{
       position: relative;
       height: 280px;
       width: 220px;
+      max-width: 220px;
       border-radius: 20px;
       overflow: hidden;
-      transition: all 0.4s ease-in-out;
       figcaption{
          position: absolute;
          top: calc((280px - 30px) * 100% / 310px); //You can add additional 30px to main height of block (280 + 30) or add to element height (30 + 30).
@@ -173,13 +167,6 @@
          color: #FFFFFF;
          border-radius: 20px;
       }
-      &:hover{
-         img{
-            width: 110%;
-            height: 110%;
-         }
-         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-      }
    }
    &__img{
       position: absolute;
@@ -189,6 +176,7 @@
       width: 100%;
       height: 100%;
       transition: all 0.4s ease-in-out;
+      object-fit: cover;
    }
 }
 
