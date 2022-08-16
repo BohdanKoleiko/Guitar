@@ -78,8 +78,10 @@
     }
     &__items{
       flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 30px;
     }
-    &__item{
+    &__img{
       flex: 0 1 100%;
     }
   }
@@ -133,6 +135,16 @@
       flex: 0 1 calc((100% - 2.44rem) / 2);
     }
   }
+
+  .brands{
+    padding: 70px 0 90px;
+    &__items{
+      column-gap: 3.875rem;
+    }
+    &__img{
+      flex: 0 1 calc((100% - 3.875rem) / 2);
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
@@ -174,6 +186,20 @@
     }
     &__card{
       flex: 0 1 calc((100% / 3) - (3.4375rem / 1.5));
+    }
+  }
+
+  .brands{
+    padding: 80px 0 100px;
+    &__title{
+      font-size: 42px;
+    }
+    &__items{
+      justify-content: flex-start;
+      column-gap: 5.875rem;
+    }
+    &__img{
+      flex: 0 1 calc(100% / 3 - (5.875rem / 1.5));
     }
   }
 }
@@ -241,6 +267,14 @@
     padding: 110px 0 140px;
     &__title{
       margin-bottom: 75px;
+      font-size: 44px;
+    }
+    &__items{
+      column-gap: 7.375rem;
+      row-gap: 4.125rem;
+    }
+    &__img{
+      flex: 0 1 calc(100% / 4 - (7.375rem / 1.33));
     }
   }
 }
