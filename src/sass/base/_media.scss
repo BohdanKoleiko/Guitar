@@ -85,6 +85,22 @@
       flex: 0 1 100%;
     }
   }
+
+  .descr-opportunity{
+    padding: 60px 0 60px;
+    &__title{
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 40px;
+   }
+    &__item{
+      min-width: 200px;
+   }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
@@ -145,6 +161,25 @@
       flex: 0 1 calc((100% - 3.875rem) / 2);
     }
   }
+
+  .descr-opportunity{
+    padding: 70px 0 70px;
+    &__title{
+      margin-bottom: 55px;
+      font-size: 40px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: calc(40 / 16)+rem;
+    }
+    &__item{
+      flex: 0 1 calc((100% - 2.5rem) / 2);
+    }
+    &__item-heading{
+      font-size: 16px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
@@ -202,6 +237,16 @@
       flex: 0 1 calc(100% / 3 - (5.875rem / 1.5));
     }
   }
+
+  .descr-opportunity{
+    padding: 80px 0 80px;
+    &__item{
+      flex: 0 1 calc((100% / 3) - (2.5rem / 1.5));
+    }
+    &__item-heading{
+      font-size: 18px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 1025
@@ -236,9 +281,9 @@
       img{
         transition: all 0.3s ease-in-out;
         &:hover{
-           transform: scale(110%) rotate(-5deg);
+          transform: scale(110%) rotate(-5deg);
         }
-     }
+      }
     }
   }
 
@@ -246,21 +291,21 @@
     padding: 90px 0 110px 0;
     &__title{
       margin-bottom: 80px;
-   }
-   &__cards{
-    gap: calc(69 / 16) + rem;
-   }
-   &__card{
-    flex: 0 1 calc((100% / 4) - (4.3125rem / 1.33));
-    transition: all 0.4s ease-in-out;
-    &:hover{
-      img{
-         width: 110%;
-         height: 110%;
+    }
+    &__cards{
+      gap: calc(69 / 16) + rem;
+    }
+    &__card{
+      flex: 0 1 calc((100% / 4) - (4.3125rem / 1.33));
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        img{
+          width: 110%;
+          height: 110%;
+        }
       }
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-   }
-   }
+    }
   }
 
   .brands{
@@ -275,6 +320,20 @@
     }
     &__img{
       flex: 0 1 calc(100% / 4 - (7.375rem / 1.33));
+    }
+  }
+
+  .descr-opportunity{
+    padding: 93px 0 94px;
+    &__title{
+      margin-bottom: 75px;
+      font-size: 44px;
+    }
+    &__items{
+      justify-content: space-between;
+    }
+    &__item{
+      flex: 0 1 calc((100% / 4) - (2.5rem / 1.33));
     }
   }
 }
