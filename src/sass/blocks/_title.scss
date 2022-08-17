@@ -2,7 +2,8 @@
    font-family: 'Cal Sans';
    font-weight: 600;
    font-size: 44px;
-   line-height: 1.205;
+   line-height: calc(53 / 44);
+   //line-height: 53px;
    color: #121212;
    text-align: center;
    @include red-txt;
