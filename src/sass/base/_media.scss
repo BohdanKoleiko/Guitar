@@ -101,6 +101,41 @@
       min-width: 200px;
    }
   }
+
+  .feedback{
+    padding: 80px 0 60px 0;
+    &__wrap{
+      margin: 0;
+    }
+    &__title{
+      font-size: 35px;
+      margin-bottom: 50px;
+    }
+  }
+  .customers{
+    &__slider{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__photo-box{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-right: 20px;
+    }
+    &__decor{
+      top: 25px;
+    }
+    &__txt, &__name{
+      font-size: 18px;
+    }
+    &__txt{
+      margin-bottom: 30px;
+    }
+    &__career{
+      font-size: 12px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
@@ -334,6 +369,16 @@
     }
     &__item{
       flex: 0 1 calc((100% / 4) - (2.5rem / 1.33));
+    }
+  }
+
+  .feedback{
+    padding: 240px 0 120px 0;
+    &__wrap{
+      margin: 0 25.84px 0 97px;
+    }
+    &__title{
+      margin-bottom: 109px;
     }
   }
 }
