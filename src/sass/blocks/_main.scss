@@ -268,9 +268,6 @@
   }
   &__photo-box{
     position: relative;
-    width: 407px;
-    height: 341px;
-    margin-right: 20px;
   }
   &__decor{
     position: absolute;
@@ -278,7 +275,7 @@
     left: 18px;
     //width: 284.72px;
     //height: 257.89px;
-    padding-bottom: calc(257.89px * 100% / 407px);
+    padding-top: calc(257.89px * 100% / 407px);
     width: calc(284.72px * 100% / 407px);
     background: $main-color;
     border-radius: 40px 0px 400px 400px;
@@ -286,9 +283,11 @@
   }
   &__photo{
     position: absolute;
+    top: 0;
     right: 0;
     //max-width: 326px;
     width: calc(326px * 100% / 407px);
+    //height: calc(341px * 100% / 407px);
     border-radius: 100% 100%;
     overflow: hidden;
     img{
@@ -297,17 +296,16 @@
     }
   }
   &__txt-box{
+    //flex: 0 1 calc(524px * 100% / 1077px);
     max-width: 524px;
     //max-height: 283px;
   }
   &__txt, &__name{
-    font-size: 24px;
     line-height: calc(38 / 24);
   }
   &__txt{
     font-weight: 400;
     color: #666666;
-    margin-bottom: 56px;
     p{
       &:not(:last-child){
         margin-bottom: 15px;
@@ -327,7 +325,6 @@
   }
   &__career{
     font-weight: 500;
-    font-size: 18px;
     line-height: calc(29 / 18);
     //line-height: 29px;
     letter-spacing: 0.08em;
