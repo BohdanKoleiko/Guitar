@@ -7,7 +7,7 @@ if (checkClass) {
     autoHeight: true,
     direction: 'horizontal',
     loop: true,
-    speed: 700,
+    speed: 400,
     spaceBetween: 25,
   
     // If we need pagination
