@@ -137,6 +137,37 @@
       font-size: 12px;
     }
   }
+
+  .apps{
+    padding: 40px 0;
+    &__wrap{
+      flex-direction: column;
+      margin: 0;
+      gap: 30px;
+    }
+    &__title{
+      font-size: 35px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    &__descr{
+      margin: 0;
+    }
+    &__pictures{
+      justify-content: center;
+    }
+    &__picture{
+      height: 42px;
+    }
+    &__app-examples{
+      padding-top: 0;
+      width: 300px;
+      flex: 0 1 300px;
+    }
+    &__app-img{
+      border-radius: 8px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
@@ -215,6 +246,23 @@
     }
     &__item-heading{
       font-size: 16px;
+    }
+  }
+
+  .apps{
+    padding: 50px 0;
+    &__wrap{
+      gap: 30px;
+    }
+    &__title{
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    &__app-img{
+      border-radius: 10px;
+    }
+    &__picture{
+      height: 48px;
     }
   }
 }
@@ -316,6 +364,36 @@
     }
     &__career{
       font-size: 16px;
+    }
+  }
+
+  .apps{
+    padding: 80px 0;
+    &__wrap{
+      flex-direction: row;
+      gap: 0;
+    }
+    &__title{
+      font-size: 42px;
+      margin-bottom: 45px;
+      text-align: left;
+    }
+    &__pictures{
+      justify-content: flex-start;
+    }
+    &__app-img{
+      border-radius: 15px;
+    }
+    &__descr{
+      margin-right: 20px;
+    }
+    &__app-examples{
+      padding-top: calc(533px * 100% / 1172px);
+      width: 0;
+      flex: 0 1 calc(568px * 100% / 1172px);
+    }
+    &__picture{
+      height: 52px;
     }
   }
 }
@@ -433,6 +511,20 @@
     }
     &__career{
       font-size: 18px;
+    }
+  }
+
+  .apps{
+    padding: 120px 0;
+    &__title{
+      font-size: 48px;
+      margin-bottom: 60px;
+    }
+    &__picture{
+      height: 57px;
+    }
+    &__app-img{
+      border-radius: 25px;
     }
   }
 }

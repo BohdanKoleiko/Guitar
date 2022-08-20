@@ -365,7 +365,6 @@
 }
 
 .apps{
-   padding: 120px 0;
    &__wrap{
       display: flex;
       justify-content: space-between;
@@ -373,13 +372,9 @@
       margin: 0 14px;
    }
    &__descr{
-      flex: 0 1 484px;
-      margin-right: 20px;
+      flex: 0 1 50%;
    }
    &__title{
-      margin-bottom: 60px;
-      text-align: left;
-      font-size: 48px;
       line-height: calc(66 / 48);
       //line-height: 66px;
       span{
@@ -387,26 +382,22 @@
       }
    }
    &__pictures{
+      display: flex;
+      gap: 25px;
       max-height: 57px;
+   }
+   &__picture{
+      display: inline-block;
+      max-width: 192.375px;
+      border-radius: 5px;
+      overflow: hidden;
       img{
          height: 100%;
          width: 100%;
       }
    }
-   &__picture{
-      display: inline-block;
-      max-width: 192.375px;
-      max-height: 57px;
-      border-radius: 5px;
-      overflow: hidden;
-      &:not(:last-child){
-         margin-right: 25.65px;
-      }
-   }
    &__app-examples{
       position: relative;
-      flex: 0 1 calc(568px * 100% / 1172px);
-      padding-top: calc(533px * 100% / 1172px);
       // or height: 533px;
       div{
          &:nth-child(2){
@@ -437,11 +428,10 @@
       max-height: 461px;
       padding-top: calc(461px * 100% / 533px);
       overflow: hidden;
-      border-radius: 25px;
       background-image: url(../../img/apps-img/appsSketch1.png);
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: contain;
       box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.08);
    }
 }
