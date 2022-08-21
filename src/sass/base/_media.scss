@@ -158,7 +158,9 @@
       justify-content: center;
     }
     &__picture{
+      flex: 0 1 calc(100% / 2);
       height: 42px;
+      max-width: 135px;
     }
     &__app-examples{
       padding-top: 0;
@@ -291,6 +293,7 @@
     }
     &__picture{
       height: 48px;
+      max-width: 145px;
     }
   }
 
@@ -443,6 +446,7 @@
     }
     &__picture{
       height: 52px;
+      max-width: 155px;
     }
   }
 
@@ -590,6 +594,7 @@
     }
     &__picture{
       height: 57px;
+      max-width: 192.375px;
     }
     &__app-img{
       border-radius: 25px;
