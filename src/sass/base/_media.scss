@@ -96,10 +96,13 @@
       flex-wrap: wrap;
       justify-content: center;
       row-gap: 40px;
-   }
+    }
     &__item{
       min-width: 200px;
-   }
+    }
+    &__img{
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -176,6 +179,9 @@
     &__item{
       flex: 0 1 calc((100% - 2.5rem) / 2);
     }
+    &__img{
+      margin-bottom: 25px;
+    }
     &__item-heading{
       font-size: 16px;
     }
@@ -242,6 +248,9 @@
     padding: 80px 0 80px;
     &__item{
       flex: 0 1 calc((100% / 3) - (2.5rem / 1.5));
+    }
+    &__img{
+      margin-bottom: 30px;
     }
     &__item-heading{
       font-size: 18px;
@@ -334,6 +343,9 @@
     }
     &__item{
       flex: 0 1 calc((100% / 4) - (2.5rem / 1.33));
+    }
+    &__img{
+      margin-bottom: 40px;
     }
   }
 }
