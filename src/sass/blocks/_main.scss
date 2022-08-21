@@ -63,10 +63,6 @@
       //line-height: 24px;
       color: #FFFFFF;
       text-decoration: none;
-      transition: background-color 0.3s ease-in-out;
-      &:hover{
-         background-color: #dd3f00;
-      }
    }
    &__apps{
       max-width: 80px;
@@ -82,17 +78,12 @@
 }
 
 .store{
-   padding-top: 120px;
-   padding-bottom: 90px;
    &__items{
       margin-top: 86px;
    }
    &__header{
       display: flex;
       justify-content: space-between;
-      &:nth-child(n+2){
-         margin-top: 96px;
-      }
    }
    &__item{
       display: flex;
@@ -114,7 +105,6 @@
    }
    &__guitars-box{
       max-height: 282px;
-      margin-top: 32px;
    }
    &__guitar-img{
       max-width: 364px;
@@ -125,7 +115,6 @@
       }
    }
    &__guitar-name{
-      margin-top: 40px;
       font-weight: 500;
       font-size: 16px;
       line-height: calc(24 / 16);

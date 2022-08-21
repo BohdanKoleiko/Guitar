@@ -42,12 +42,12 @@
 
   .store{
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     &__title{
-      font-size: 40px;
+      font-size: 35px;
     }
     &__items{
-      margin-top: 50px;
+      margin-top: 35px;
     }
     &__caption, &__more-products{
       font-size: 16px;
@@ -57,13 +57,22 @@
       justify-content: center;
       gap: 1.875rem;
     }
+    &__header{
+      margin-bottom: 20px;
+      &:nth-child(n+2){
+        margin-top: 70px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 15px;
+    }
   }
 
   .categories{
-    padding: 60px 0 60px 0;
+    padding: 40px 0;
     &__title{
       margin-bottom: 50px;
-      font-size: 40px;
+      font-size: 35px;
    }
    &__cards{
     justify-content: center;
@@ -72,9 +81,9 @@
   }
 
   .brands{
-    padding: 60px 0 80px;
+    padding: 40px 0;
     &__title{
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       font-size: 35px;
     }
     &__items{
@@ -89,10 +98,10 @@
   }
 
   .descr-opportunity{
-    padding: 60px 0 60px;
+    padding: 40px 0;
     &__title{
-      margin-bottom: 50px;
-      font-size: 40px;
+      margin-bottom: 30px;
+      font-size: 35px;
     }
     &__items{
       flex-wrap: wrap;
@@ -108,13 +117,13 @@
   }
 
   .feedback{
-    padding: 80px 0 60px 0;
+    padding: 40px 0;
     &__wrap{
       margin: 0;
     }
     &__title{
       font-size: 35px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
   }
   .customers{
@@ -126,13 +135,13 @@
       min-width: 200px;
       min-height: 168px;
       margin-right: 0;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     &__decor{
       top: 25px;
     }
     &__txt, &__name{
-      font-size: 18px;
+      font-size: 16px;
     }
     &__txt{
       margin-bottom: 30px;
@@ -211,6 +220,7 @@
     }
   }
 
+  // Main block
   .intro{
     padding-bottom: 80px;
     &__title{
@@ -226,6 +236,8 @@
   }
 
   .store{
+    padding-top: 90px;
+    padding-bottom: 50px;
     &__title{
       font-size: 42px;
     }
@@ -235,6 +247,15 @@
     &__guitars-box{
       max-width: 354px;
       flex: 0 1 calc((100% / 2) - (1.875rem / 2));
+    }
+    &__header{
+      margin-bottom: 25px;
+      &:nth-child(n+2){
+        margin-top: 80px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 25px;
     }
   }
 
@@ -303,6 +324,7 @@
     }
   }
 
+  // Footer block
   .footer{
     padding-top: 50px;
     &__wrap{
@@ -327,6 +349,8 @@
 
 // Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
 @media screen and (min-width: 769px) {
+
+  // Main block
   .intro{
     padding-top: 120px;
     padding-bottom: 100px;
@@ -338,6 +362,8 @@
   }
 
   .store{
+    padding-top: 100px;
+    padding-bottom: 70px;
     &__title{
       font-size: 44px;
     }
@@ -348,6 +374,15 @@
       max-width: 364px;
       // ЧОМУ Я ПОДІЛИВ НА 1.5 я не знаю, але, якщо взяти 54 і / 1.5 і потім отримане число ще / 2 і * на 3, то отримаємо 54
       flex: 0 1 calc((100% / 3) - (3.375rem / 1.5));
+    }
+    &__header{
+      margin-bottom: 28px;
+      &:nth-child(n+2){
+        margin-top: 85px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 35px;
     }
   }
 
@@ -493,15 +528,24 @@
     }
   }
 
+  // Main block
   .intro{
     padding-top: 144px;
     &__back-img{
       right: -10%;
       top: -235px;
     }
+    &__button{
+      transition: background-color 0.3s ease-in-out;
+      &:hover{
+        background-color: #dd3f00;
+      }
+    }
   }
 
   .store{
+    padding-top: 120px;
+    padding-bottom: 90px;
     &__more-products{
       &:hover{
         color: #121212;
@@ -514,6 +558,15 @@
           transform: scale(110%) rotate(-5deg);
         }
       }
+    }
+    &__header{
+      margin-bottom: 32px;
+      &:nth-child(n+2){
+        margin-top: 96px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 40px;
     }
   }
 
