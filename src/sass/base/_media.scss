@@ -21,6 +21,7 @@
     }
   }
 
+  // Main block
   .intro{
     padding-top: 80px;
     padding-bottom: 70px;
@@ -168,6 +169,33 @@
       border-radius: 8px;
     }
   }
+
+  // Footer block
+  .footer{
+    padding-top: 40px;
+    &__wrap{
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__logo-contacts{
+      margin: 0;
+      max-width: 100%;
+    }
+    &__menu{
+      column-gap: 71px;
+      margin-right: 0;
+      ul{
+        flex: 1 1 auto;
+        min-width: 110px;
+      }
+    }
+    &__website-name{
+      display: block;
+    }
+    &__copy{
+      margin-top: 45px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
@@ -263,6 +291,27 @@
     }
     &__picture{
       height: 48px;
+    }
+  }
+
+  .footer{
+    padding-top: 50px;
+    &__wrap{
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 50px;
+    }
+    &__logo-contacts{
+      flex: 1 1 auto;
+    }
+    &__menu{
+      flex: 1 1 auto;
+    }
+    &__social-media{
+      flex: 0 1 auto;
+    }
+    &__copy{
+      margin-top: 60px;
     }
   }
 }
@@ -396,6 +445,25 @@
       height: 52px;
     }
   }
+
+  // Footer block
+  .footer{
+    padding-top: 65px;
+    &__wrap{
+      gap: 40px;
+    }
+    &__logo-contacts{
+      margin: 0;
+      max-width: 100%;
+    }
+    &__menu{
+      column-gap: 71px;
+      margin-right: 0;
+    }
+    &__copy{
+      margin-top: 70px;
+    }
+  }
 }
 
 // Будуть діяти правила для екранів які ширше ніж 1025
@@ -525,6 +593,25 @@
     }
     &__app-img{
       border-radius: 25px;
+    }
+  }
+
+  // Footer block
+  .footer{
+    padding-top: 65px;
+    &__wrap{
+      gap: 0;
+    }
+    &__logo-contacts{
+      margin: 0;
+      max-width: 100%;
+    }
+    &__menu{
+      column-gap: 71px;
+      margin-right: calc(161px * 100% / 1120px);
+    }
+    &__copy{
+      margin-top: 80px;
     }
   }
 }

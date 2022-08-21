@@ -15,10 +15,7 @@
       margin: 0 auto;
       display: flex;
    }
-   &__logo-contacts{
-      max-width: 220px;
-      margin-right: calc(255px * 100% / 1120px);
-   }
+   &__logo-contacts{}
    &__logo{
       max-width: 202px;
       gap: 20px;
@@ -60,7 +57,6 @@
       max-width: 324px;
       display: flex;
       gap: 126px;
-      margin-right: calc(161px * 100% / 1120px);
    }
    &__menu-title{
       font-weight: 600;
@@ -107,6 +103,5 @@
       font-size: 16px;
       line-height: 160%;
       color: rgba(18, 18, 18, 0.6);
-      margin-top: 80px;
    }
 }
