@@ -1,0 +1,687 @@
+
+// Будуть діяти правила для екранів які ширше ніж 320 і не більше 480
+@media screen and (min-width: 320px) {
+  .nav{
+    max-width: 460px;
+    margin: 50px 0 0 0;
+    &__menu{
+      li:not(:last-child){
+        margin-right: 15px;
+      }
+      a{
+        &:focus{
+          color: rgba(18, 18, 18, 0.4);
+        }
+      }
+    }
+  }
+  .logotype{
+    &__website-name{
+      display: none;
+    }
+  }
+
+  // Main block
+  .intro{
+    padding-top: 80px;
+    padding-bottom: 70px;
+    &__back-img{
+      display: none;
+    }
+    &__title{
+      font-size: 42px;
+    }
+    &__txt{
+      font-size: 14px;
+    }
+    &__button{
+      font-size: 14px;
+      padding: 17px 45px;
+    }
+  }
+
+  .store{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    &__title{
+      font-size: 35px;
+    }
+    &__items{
+      margin-top: 35px;
+    }
+    &__caption, &__more-products{
+      font-size: 16px;
+    }
+    &__item{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.875rem;
+    }
+    &__header{
+      margin-bottom: 20px;
+      &:nth-child(n+2){
+        margin-top: 70px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 15px;
+    }
+  }
+
+  .categories{
+    padding: 40px 0;
+    &__title{
+      margin-bottom: 50px;
+      font-size: 35px;
+   }
+   &__cards{
+    justify-content: center;
+    gap: calc(25 / 16) + rem;
+   }
+  }
+
+  .brands{
+    padding: 40px 0;
+    &__title{
+      margin-bottom: 30px;
+      font-size: 35px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.25rem 0.625rem
+    }
+    &__img{
+      height: 70px;
+      flex: 0 1 calc((100% - 10px) / 2);
+    }
+  }
+
+  .descr-opportunity{
+    padding: 40px 0;
+    &__title{
+      margin-bottom: 30px;
+      font-size: 35px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 40px;
+    }
+    &__item{
+      min-width: 200px;
+    }
+    &__img{
+      margin-bottom: 20px;
+    }
+  }
+
+  .feedback{
+    padding: 40px 0;
+    &__wrap{
+      margin: 0;
+    }
+    &__title{
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  }
+  .customers{
+    &__slider{
+      flex-direction: column;
+    }
+    &__photo-box{
+      width: 200px;
+      min-width: 200px;
+      min-height: 168px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__decor{
+      top: 25px;
+    }
+    &__txt, &__name{
+      font-size: 16px;
+    }
+    &__txt{
+      margin-bottom: 30px;
+    }
+    &__career{
+      font-size: 12px;
+    }
+  }
+
+  .apps{
+    padding: 40px 0;
+    &__wrap{
+      flex-direction: column;
+      margin: 0;
+      gap: 30px;
+    }
+    &__title{
+      font-size: 35px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    &__descr{
+      margin: 0;
+    }
+    &__pictures{
+      justify-content: center;
+    }
+    &__picture{
+      flex: 0 1 calc(100% / 2);
+      height: 42px;
+      max-width: 135px;
+    }
+    &__app-examples{
+      padding-top: 0;
+      width: 300px;
+      flex: 0 1 300px;
+    }
+    &__app-img{
+      border-radius: 8px;
+    }
+  }
+
+  // Footer block
+  .footer{
+    padding-top: 40px;
+    &__wrap{
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__logo-contacts{
+      margin: 0;
+      max-width: 100%;
+    }
+    &__menu{
+      column-gap: 71px;
+      margin-right: 0;
+      ul{
+        flex: 1 1 auto;
+        min-width: 110px;
+      }
+    }
+    &__website-name{
+      display: block;
+    }
+    &__copy{
+      margin-top: 45px;
+    }
+  }
+}
+
+// Будуть діяти правила для екранів які ширше ніж 481 і не більше 768
+@media screen and (min-width: 481px) {
+  .logotype{
+    &__website-name{
+      display: block;
+    }
+  }
+
+  // Main block
+  .intro{
+    padding-bottom: 80px;
+    &__title{
+      font-size: 50px;
+    }
+    &__txt{
+      font-size: 16px;
+    }
+    &__button{
+      padding: 18px 48px;
+      font-size: 16px;
+    }
+  }
+
+  .store{
+    padding-top: 90px;
+    padding-bottom: 50px;
+    &__title{
+      font-size: 42px;
+    }
+    &__item{
+      justify-content: flex-start;
+    }
+    &__guitars-box{
+      max-width: 354px;
+      flex: 0 1 calc((100% / 2) - (1.875rem / 2));
+    }
+    &__header{
+      margin-bottom: 25px;
+      &:nth-child(n+2){
+        margin-top: 80px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 25px;
+    }
+  }
+
+  .categories{
+    padding: 70px 0 80px 0;
+    &__title{
+      margin-bottom: 60px;
+      font-size: 42px;
+    }
+    &__cards{
+      gap: 2.44rem;
+    }
+    &__card{
+      flex: 0 1 calc((100% - 2.44rem) / 2);
+    }
+  }
+
+  .brands{
+    padding: 70px 0 90px;
+    &__items{
+      justify-content: flex-start;
+      gap: 1.875rem 2.875rem
+    }
+    &__img{
+      flex: 0 1 calc((100% / 3) - (2.875rem / 1.5));
+    }
+  }
+
+  .descr-opportunity{
+    padding: 70px 0 70px;
+    &__title{
+      margin-bottom: 55px;
+      font-size: 40px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: calc(40 / 16)+rem;
+    }
+    &__item{
+      flex: 0 1 calc((100% - 2.5rem) / 2);
+    }
+    &__img{
+      margin-bottom: 25px;
+    }
+    &__item-heading{
+      font-size: 16px;
+    }
+  }
+
+  .apps{
+    padding: 50px 0;
+    &__wrap{
+      gap: 30px;
+    }
+    &__title{
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    &__app-img{
+      border-radius: 10px;
+    }
+    &__picture{
+      height: 48px;
+      max-width: 145px;
+    }
+  }
+
+  // Footer block
+  .footer{
+    padding-top: 50px;
+    &__wrap{
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 50px;
+    }
+    &__logo-contacts{
+      flex: 1 1 auto;
+    }
+    &__menu{
+      flex: 1 1 auto;
+    }
+    &__social-media{
+      flex: 0 1 auto;
+    }
+    &__copy{
+      margin-top: 60px;
+    }
+  }
+}
+
+// Будуть діяти правила для екранів які ширше ніж 769 і не більше 1024
+@media screen and (min-width: 769px) {
+
+  // Main block
+  .intro{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    &__back-img{
+      display: block;
+      right: -15%;
+      top: -280px;
+    }
+  }
+
+  .store{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    &__title{
+      font-size: 44px;
+    }
+    &__item{
+      gap: 54px;
+    }
+    &__guitars-box{
+      max-width: 364px;
+      // ЧОМУ Я ПОДІЛИВ НА 1.5 я не знаю, але, якщо взяти 54 і / 1.5 і потім отримане число ще / 2 і * на 3, то отримаємо 54
+      flex: 0 1 calc((100% / 3) - (3.375rem / 1.5));
+    }
+    &__header{
+      margin-bottom: 28px;
+      &:nth-child(n+2){
+        margin-top: 85px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 35px;
+    }
+  }
+
+  .categories{
+    padding: 80px 0 90px 0;
+    &__title{
+      margin-bottom: 70px;
+      font-size: 44px;
+    }
+    &__cards{
+      margin: 0 auto;
+      justify-content: flex-start;
+      gap: calc(55 / 16) + rem;
+    }
+    &__card{
+      flex: 0 1 calc((100% / 3) - (3.4375rem / 1.5));
+    }
+  }
+
+  .brands{
+    padding: 80px 0 100px;
+    &__title{
+      font-size: 42px;
+    }
+    &__items{
+      justify-content: flex-start;
+      gap: 3.125rem 5.875rem;
+    }
+    &__img{
+      flex: 0 1 calc(100% / 4 - (5.875rem / 1.33));
+    }
+  }
+
+  .descr-opportunity{
+    padding: 80px 0 80px;
+    &__item{
+      flex: 0 1 calc((100% / 3) - (2.5rem / 1.5));
+    }
+    &__img{
+      margin-bottom: 30px;
+    }
+    &__item-heading{
+      font-size: 18px;
+    }
+  }
+
+  .feedback{
+    padding: 140px 0 80px 0;
+    &__wrap{
+      margin: 0 25.84px 0 97px;
+    }
+    &__title{
+      font-size: 40px;
+      margin-bottom: 80px;
+    }
+  }
+  .customers{
+    &__slider{
+      flex-direction: row;
+    }
+    &__photo-box{
+      width: 230px;
+      height: 210px;
+      margin-right: 20px;
+      margin-bottom: 0;
+      padding-top: 0;
+      flex-shrink: 0;
+      align-self: flex-start;
+    }
+    &__txt, &__name{
+      font-size: 20px;
+    }
+    &__txt{
+      margin-bottom: 45px;
+    }
+    &__career{
+      font-size: 16px;
+    }
+  }
+
+  .apps{
+    padding: 80px 0;
+    &__wrap{
+      flex-direction: row;
+      gap: 0;
+    }
+    &__title{
+      font-size: 42px;
+      margin-bottom: 45px;
+      text-align: left;
+    }
+    &__pictures{
+      justify-content: flex-start;
+    }
+    &__app-img{
+      border-radius: 15px;
+    }
+    &__descr{
+      margin-right: 20px;
+    }
+    &__app-examples{
+      padding-top: calc(533px * 100% / 1172px);
+      width: 0;
+      flex: 0 1 calc(568px * 100% / 1172px);
+    }
+    &__picture{
+      height: 52px;
+      max-width: 155px;
+    }
+  }
+
+  // Footer block
+  .footer{
+    padding-top: 65px;
+    &__wrap{
+      gap: 40px;
+    }
+    &__logo-contacts{
+      margin: 0;
+      max-width: 100%;
+    }
+    &__menu{
+      column-gap: 71px;
+      margin-right: 0;
+    }
+    &__copy{
+      margin-top: 70px;
+    }
+  }
+}
+
+// Будуть діяти правила для екранів які ширше ніж 1025
+@media screen and (min-width: 1025px) {
+  .nav{
+    max-width: 563px;
+    &__menu{
+      a{
+        transition: color 0.3s ease-in-out;
+        &:hover{
+          color: rgba(18, 18, 18, 1);
+        }
+      }
+    }
+  }
+
+  // Main block
+  .intro{
+    padding-top: 144px;
+    &__back-img{
+      right: -10%;
+      top: -235px;
+    }
+    &__button{
+      transition: background-color 0.3s ease-in-out;
+      &:hover{
+        background-color: #dd3f00;
+      }
+    }
+  }
+
+  .store{
+    padding-top: 120px;
+    padding-bottom: 90px;
+    &__more-products{
+      &:hover{
+        color: #121212;
+      }
+    }
+    &__guitar-img{
+      img{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          transform: scale(110%) rotate(-5deg);
+        }
+      }
+    }
+    &__header{
+      margin-bottom: 32px;
+      &:nth-child(n+2){
+        margin-top: 96px;
+      }
+    }
+    &__guitar-name{
+      margin-top: 40px;
+    }
+  }
+
+  .categories{
+    padding: 90px 0 110px 0;
+    &__title{
+      margin-bottom: 80px;
+    }
+    &__cards{
+      gap: calc(69 / 16) + rem;
+    }
+    &__card{
+      flex: 0 1 calc((100% / 4) - (4.3125rem / 1.33));
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        img{
+          width: 110%;
+          height: 110%;
+        }
+      }
+    }
+  }
+
+  .brands{
+    padding: 110px 0 140px;
+    &__title{
+      margin-bottom: 75px;
+      font-size: 44px;
+    }
+    &__items{
+      column-gap: 7.375rem;
+      row-gap: 4.125rem;
+    }
+    &__img{
+      flex: 0 1 calc(100% / 4 - (7.375rem / 1.33));
+    }
+  }
+
+  .descr-opportunity{
+    padding: 93px 0 94px;
+    &__title{
+      margin-bottom: 75px;
+      font-size: 44px;
+    }
+    &__items{
+      justify-content: space-between;
+    }
+    &__item{
+      flex: 0 1 calc((100% / 4) - (2.5rem / 1.33));
+    }
+    &__img{
+      margin-bottom: 40px;
+    }
+  }
+
+  .feedback{
+    padding: 240px 0 120px 0;
+    &__wrap{
+      margin: 0 25.84px 0 97px;
+    }
+    &__title{
+      font-size: 44px;
+      margin-bottom: 109px;
+    }
+  }
+  .customers{
+    &__photo-box{
+      width: calc(407px * 100% / 1077px);
+      height: 0;
+      padding-top: calc(341px * 100% / 1077px);
+      align-self: unset;
+    }
+    &__txt, &__name{
+      font-size: 24px;
+    }
+    &__txt{
+      margin-bottom: 56px;
+    }
+    &__career{
+      font-size: 18px;
+    }
+  }
+
+  .apps{
+    padding: 120px 0;
+    &__title{
+      font-size: 48px;
+      margin-bottom: 60px;
+    }
+    &__picture{
+      height: 57px;
+      max-width: 192.375px;
+    }
+    &__app-img{
+      border-radius: 25px;
+    }
+  }
+
+  // Footer block
+  .footer{
+    padding-top: 65px;
+    &__wrap{
+      gap: 0;
+    }
+    &__logo-contacts{
+      margin: 0;
+      max-width: 100%;
+    }
+    &__menu{
+      column-gap: 71px;
+      margin-right: calc(161px * 100% / 1120px);
+    }
+    &__copy{
+      margin-top: 80px;
+    }
+  }
+}

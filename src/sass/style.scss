@@ -1,5 +1,6 @@
 @import './base/fonts';
 @import './base/variables';
+@import './base/mixins';
 
 *, *::before, *::after {
    padding: 0;
@@ -12,14 +13,29 @@ li {
    list-style-type: none;
 }
 
-head, body {
+html, body {
    height: 100%;
+   //min-width: 320px;
 }
 
-body {
+.wrapper {
    display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
 }
 
+.container {
+   max-width: 1230px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+@import './blocks/logotype';
+
+@import './blocks/title';
 @import './blocks/header';
 @import './blocks/main';
 @import './blocks/footer';
+
+@import './base/media';

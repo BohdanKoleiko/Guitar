@@ -1,0 +1,29 @@
+.nav{
+   max-width: 563px;
+   margin: 62px 0 0 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &__logo{
+      //max-width: 123px;
+      flex: 0 1 123px;
+   }
+   &__menu{
+      max-width: 309px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex: 1 1 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 0 10px;
+      margin: 0 -10px 0 0;
+      a{
+         color: rgba(18, 18, 18, 0.4);
+         text-decoration: none;
+         padding: 10px 0px;
+      }
+   }
+}
