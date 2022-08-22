@@ -12,7 +12,7 @@ gulp.task('server', function() {
     browserSync.init({
       open: false,
       server: {
-          baseDir: './dist',
+          baseDir: './build',
       }
     });
 });
@@ -27,7 +27,7 @@ gulp.task('styles', function() {
     }))
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
 });
 
@@ -41,23 +41,23 @@ gulp.task('watch', function() {
 gulp.task('html', function () {
   return gulp.src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./build'));
 });
 
 gulp.task('scrits', function () {
   return gulp.src('src/**/*.js')
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./build/'));
 });
 
 gulp.task('fonts', function () {
   return gulp.src('src/font/**/*')
-    .pipe(gulp.dest('./dist/font'));
+    .pipe(gulp.dest('./build/font'));
 });
 
 gulp.task('img', function () {
   return gulp.src('src/img/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/img'));
+    .pipe(gulp.dest('./build/img'));
 });
 
 
